@@ -12,6 +12,7 @@
 - name: Include version-specific variables for Debian.
   include_vars: "{{ ansible_distribution|title }}-{{ ansible_distribution_version.split('.')[0] }}.yml"
   when: ansible_os_family == 'Debian'
+#checking few things
 
 - name: Define java_packages.
   set_fact:
